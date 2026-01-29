@@ -62,7 +62,7 @@ listEl.addEventListener('click', function (e) {
     const li = e.target.closest('li[data-id]');
     const id = li.dataset.id;
 
-    fetch(`http://localhost:3000/delete/${id}`, { method: 'DELETE' })
+    fetch(`http://localhost:3000/delete/${id}`, )
         .then(res => {
             if (!res.ok) throw res.status;
             loadPosts();
